@@ -16,7 +16,7 @@ qrng-hackathon_2025/
 Contains function build_qrng which generates a circuit creating a uniform superposition of all outcomes.
 
 ### runner.py
-Contains function run_qrng. This function runs the circuit generated with build_qrng and return a random number.
+Contains function run_qrng. This function runs the circuit generated with build_qrng and returns a random number.
 
 The user can decide whether to use a real quantum backend or Aer local simulator.
 Real backend is run with error mitigation/suppression techniques, whereas Aer includes a NoiseModel simulating the noise affecting a real backend.
