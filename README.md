@@ -1,5 +1,5 @@
-# qrng-hackaton_2025
-Contains my project presented at the Qiskit Fall Fest PNC 2025 for the Quantum Random Number Generator hackaton.
+# qrng-hackathon_2025
+Contains my project presented at the Qiskit Fall Fest PNC 2025 for the Quantum Random Number Generator hackathon.
 
 ## Project structure
 ```
@@ -8,7 +8,7 @@ qrng-hackathon_2025/
 └── qrng/
     ├── circuit.py
     ├── runner.py
-    └── Hackaton_2025_usage.ipynb
+    └── hackathon_2025_usage.ipynb
 ```
     
 ## Explanation
@@ -29,5 +29,5 @@ run_qrng creates a uniform superposition of quantum states from |0> to |2^num_qu
 
 If two or more otucomes are equally most frequent, the function re-run the circuit with a single shot, and output the obtained outcome as random number. This avoids chosing a criterion which would affect the randomicity of the algorithm; for example, a criterion such as "in case of equally most frequent outcomes pick the smallest one" would drive the generated random numbers towards low outputs. Furthermo, by re-running the circuit only in case of equally most-frequent outcome, the resource consumption of the algorithm is reduced
 
-###  Hackaton_2025_usage.ipynb
+###  hackathon_2025_usage.ipynb
 Contains a usage example of run_qrng. The function is first run by using a real backend, than using AerSimulator. Finally, the uniformity of the two so-generated distributions is compared by looking at their normalized standard deviations.
